@@ -27,27 +27,25 @@ This is a simple CRUD API for managing products and variants injected inside Boi
 git clone https://github.com/mucha-fauzy/crud-auth-boilerplate-go-impl.git
 ```
 
-2. Install the required dependencies:
+2. Install the required dependencies
 
-```
-go mod download
-```
+3. Create `.env` and set your MySQL or other DB configurations, You can see the required parameters inside `./infras.mysql.go`
 
-3. Create and seed the table in MySQL (the file are inside the migrations folder and seeders folder)
+4. Create and seed the table in MySQL (the file are inside the migrations folder and seeders folder)
 
-4. Generate wire:
+5. Generate wire:
 
 ```
 go generate ./...
 ```
 
-5. Build the application:
+6. Build the application:
 
 ```
 go build
 ```
 
-6. Run the application:
+7. Run the application:
 
 ```
 go run .
